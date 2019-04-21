@@ -9,7 +9,7 @@ import socket
 from stomp import *
 
 url = "ws://localhost:8080/ssbt-websocket"
-c = stomp.Connection([('localhost/ssbt-websocket', 8080)])
+c = Connection([('localhost/ssbt-websocket', 8080)])
 c.set_listener('', PrintingListener())
 c.start()
 c.connect('ssbt_1', 'Password1', wait=True)
