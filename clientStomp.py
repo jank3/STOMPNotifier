@@ -6,7 +6,7 @@ Created on Thu Apr 18 21:34:22 2019
 """
 
 import socket 
-import stomp
+from stomp import *
 
 url = "ws://localhost:8080/ssbt-websocket"
 c = stomp.Connection([('localhost/ssbt-websocket', 8080)])
