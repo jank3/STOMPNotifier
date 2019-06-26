@@ -20,5 +20,5 @@ class ssbt_socket_face_id(WebSocket):
         print(self.address, 'closed')
 
 
-server = WebSocketServer('', 61613, ssbt_socket_face_id)
+server = WebSocketServer('127.0.0.1', 61613, ssbt_socket_face_id)
 server.serve_forever()
